@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <td>Month</td>
+    <td>Requests</td>
+    {{#if showChangeColumn}}
+      <td>Change</td>
+    {{/if}}
+  </thead>
+  <tbody>
+    {{#each counters as |c|}}
+      <tr>
+        <td>{{c.start_time}}</td>
+        <td>{{c.total}}</td>
+        {{#if showChangeColumn}}
+          <td>3.5%</td>
+        {{/if}}
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
