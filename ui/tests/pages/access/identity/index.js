@@ -10,11 +10,11 @@ export default create({
   }),
 
   delete: clickable('[data-test-confirm-action-trigger]', {
-    scope: '[data-test-item-delete]',
+    scope: '[confirm-action-message]',
     testContainer: '#ember-testing',
   }),
   confirmDelete: clickable('[data-test-confirm-button]', {
-    scope: '[data-test-item-delete]',
+    scope: '[confirm-action-message]',
     testContainer: '#ember-testing',
   }),
 });
